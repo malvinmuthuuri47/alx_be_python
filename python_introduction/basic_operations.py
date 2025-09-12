@@ -1,3 +1,7 @@
+"""
+This is a python script meant to perform arithmetic operations
+on a set of numbers
+"""
 number1 = 10
 number2 = 5
 
