@@ -9,7 +9,7 @@ Pseudocode:
     - Print the results
 """
 
-current_age = int(input("Enter your current age: "))
+current_age = int(input("How old are you?: "))
 
 future_age = current_age + 27
 
