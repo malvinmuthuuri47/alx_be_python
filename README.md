@@ -7,3 +7,6 @@
 > * Install Python on your system and set up a development environment to start writing Python code.
 > * Explain the importance of indentation in Python code and how it contributes to code readability.
 > * Write basic Python code following proper syntax guidelines
+
+> [!NOTE]
+> This is an introductory repository to Python
