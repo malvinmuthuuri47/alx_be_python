@@ -14,13 +14,13 @@ The pseudocode is as follows:
     END
 '''
 
-user_weather_projection = str(input("What's the weather like today? (sunny/rainy/cold): ")).strip().lower()
+weather = str(input("What's the weather like today? (sunny/rainy/cold): ")).strip().lower()
 
-if user_weather_projection == "sunny":
+if weather == "sunny":
     print("Wear a t-shirt and sunglasses.")
-elif user_weather_projection == "rainy":
+elif weather == "rainy":
     print("Don't forget your umbrella and a raincoat.")
-elif user_weather_projection == "cold":
+elif weather == "cold":
     print("Make sure to wear a warm coat and a scarf.")
 else:
     print("Sorry, I don't have recommendations for this weather.")
