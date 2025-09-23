@@ -24,15 +24,11 @@
 > [!IMPORTANT]
 > 1. Weather Recommendation Program.
 > This program provides a wardrobe(clothes) recommendation to the user based on the current weather conditions as inputted by the user.
-
 > 2. A Calculator program.
 > This program implements a calculator functionality but with the use of Match case statements.
-
 > 3. A Multiplication Table generator
 > This program asks a user to enter a number and then calculates the multiples of that number upto 10 and prints them out.
-
 > 4. Drawing patterns with Nested loops
 > This program draws a square pattern using an asterisk (&ast;) as many times as specified by the user input
-
 > 5. A Personal daily reminder
 > This program implements functionality to remind a user about a task based on the priority level and whether the task is time-bound
