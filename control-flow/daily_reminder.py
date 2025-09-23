@@ -32,29 +32,33 @@ The pseudocode is as follows:
 
 def daily_reminder():
     user_task = str(input("Enter your task: ")).strip()
-    priority = str(input("Priority (high/medium/low): ")).strip().lower()
-    time_bound = str(input("Is it time-bound? (yes/no): ")).strip().lower()
+    task_priority = str(input("Priority (high/medium/low): ")).strip().lower()
+    task_timing = str(input("Is it time-bound? (yes/no): ")).strip().lower()
 
-    match priority:
+    match task_priority:
         case "high":
-            if time_bound == "yes":
-                reminder = f"Reminder: '{user_task}' is a high priority task that requires immediate attention today!"
+            if task_timing == "yes":
+                reminder = f"'{user_task}' is a high priority task that requires immediate attention today!"
+                print(f"Reminder: {reminder}")
             else:
-                reminder = f"Reminder: '{user_task}' is a high priority task. Consider completing as soon as possible."
+                reminder = f"'{user_task}' is a high priority task. Consider completing as soon as possible."
+                print(f"Reminder: {reminder}")
         case "medium":
-            if time_bound == "yes":
-                reminder = f"Reminder: '{user_task}' is a medium priority task that requires some attention today!"
+            if task_timing == "yes":
+                reminder = f"'{user_task}' is a medium priority task that requires some attention today!"
+                print(f"Reminder: {reminder}")
             else:
-                reminder = f"Reminder: '{user_task}' is a medium priority task. Consider completing it soon."
+                reminder = f"'{user_task}' is a medium priority task. Consider completing it soon."
+                print(f"Reminder: {reminder}")
         case "low":
-            if time_bound == "yes":
-                reminder = f"Note: '{user_task}' is a low priority task. Consider completing it soon"
+            if task_timing == "yes":
+                reminder = f"'{user_task}' is a low priority task. Consider completing it soon"
+                print(f"Note: {reminder}")
             else:
-                reminder = f"Note: '{user_task}' is a low priority task. Consider completing it when you have free time."
+                reminder = f"'{user_task}' is a low priority task. Consider completing it when you have free time."
+                print(f"Note: {reminder}")
         case _:
             reminder = "Sorry. Please make sure you enter valid program parameters specified in the prompts"
-
-    print(reminder)
 
 if __name__ == "__main__":
     daily_reminder()
