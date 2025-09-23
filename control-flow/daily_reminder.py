@@ -32,10 +32,10 @@ The pseudocode is as follows:
 
 def daily_reminder():
     user_task = str(input("Enter your task: ")).strip()
-    task_priority = str(input("Priority (high/medium/low): ")).strip().lower()
+    priority = str(input("Priority (high/medium/low): ")).strip().lower()
     task_timing = str(input("Is it time-bound? (yes/no): ")).strip().lower()
 
-    match task_priority:
+    match priority:
         case "high":
             if task_timing == "yes":
                 reminder = f"'{user_task}' is a high priority task that requires immediate attention today!"
