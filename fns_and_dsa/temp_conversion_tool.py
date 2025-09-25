@@ -23,7 +23,7 @@ def convert_to_fahrenheit(celsius):
 
 def main():
     temp_var = float(input("Enter the temperature to convert: "))
-    C_or_F = input("Is this temperature in Celcius or Fahrenheit? (C/F): ")
+    C_or_F = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 
     match C_or_F:
         case "C":
