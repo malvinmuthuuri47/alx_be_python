@@ -3,8 +3,8 @@ This module implements logic to convert temperatures between Celcius and Fahrenh
 using global variables to store conversion factors
 """
 
-FAHRENHEIT_TO_CELCIUS_FACTOR = 5/9
-CELCIUS_TO_FAHRENHEIT_FACTOR = 9/5
+FAHRENHEIT_TO_CELCIUS_FACTOR = 5 / 9
+CELCIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celcius(fahrenheit):
     """
