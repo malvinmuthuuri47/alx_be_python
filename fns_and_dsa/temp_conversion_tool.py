@@ -2,17 +2,15 @@
 This module implements logic to convert temperatures between Celcius and Fahrenheit,
 using global variables to store conversion factors
 """
-
-FAHRENHEIT_TO_CELCIUS_FACTOR = 5 / 9
-CELCIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celcius(fahrenheit):
     """
     This function takes temperature in fahrenheit and returns the temperature
     converted to celcius
     """
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
-    res = fahrenheit * FAHRENHEIT_TO_CELCIUS_FACTOR
+    res = fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR
     print(f"{fahrenheit} is {res}25\u00B0 C")
 
 def convert_to_fahrenheit(celcius):
@@ -20,8 +18,7 @@ def convert_to_fahrenheit(celcius):
     This function takes temperature in Celcius and returns the temperature
     converted to fahrenheit
     """
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
-    res = celcius * CELCIUS_TO_FAHRENHEIT_FACTOR
+    res = celcius * CELSIUS_TO_FAHRENHEIT_FACTOR
     print(f"{celcius} is {res}25\u00B0 F")
 
 def main():
