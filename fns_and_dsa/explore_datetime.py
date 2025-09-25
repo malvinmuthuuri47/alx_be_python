@@ -14,7 +14,7 @@ def display_current_datetime():
     print("Current date and time: ", current_date)
     return current_date
 
-def main():
+def calculate_future_date():
     """
     This function asks the user to enter a number of days and adds those days to the
     current date returned by the display_current_datetime function, and returns the
@@ -31,4 +31,4 @@ def main():
     print("Future date:", future_date)
 
 if __name__ == "__main__":
-    main()
+    calculate_future_date()
