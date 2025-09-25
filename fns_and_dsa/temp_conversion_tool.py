@@ -5,7 +5,7 @@ using global variables to store conversion factors
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
-def convert_to_celcius(fahrenheit):
+def convert_to_celsius(fahrenheit):
     """
     This function takes temperature in fahrenheit and returns the temperature
     converted to celcius
@@ -13,13 +13,13 @@ def convert_to_celcius(fahrenheit):
     res = fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR
     print(f"{fahrenheit} is {res}25\u00B0 C")
 
-def convert_to_fahrenheit(celcius):
+def convert_to_fahrenheit(celsius):
     """
     This function takes temperature in Celcius and returns the temperature
     converted to fahrenheit
     """
-    res = celcius * CELSIUS_TO_FAHRENHEIT_FACTOR
-    print(f"{celcius} is {res}25\u00B0 F")
+    res = celsius * CELSIUS_TO_FAHRENHEIT_FACTOR
+    print(f"{celsius} is {res}25\u00B0 F")
 
 def main():
     temp_var = float(input("Enter the temperature to convert: "))
@@ -29,7 +29,7 @@ def main():
         case "C":
             convert_to_fahrenheit(temp_var)
         case "F":
-            convert_to_celcius(temp_var)
+            convert_to_celsius(temp_var)
         case _:
             raise Exception("Invalid temperature. Please enter a numeric value.")
 
