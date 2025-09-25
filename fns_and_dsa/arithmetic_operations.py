@@ -2,7 +2,7 @@
 This module defines a function that performs basic arithmetic operations.
 """
 
-def perform_operation(num1: float, num2:float, operation: str) -> float | str:
+def perform_operation(num1, num2, operation):
     """
     This function takes in three params:
         - num1 -> first number
