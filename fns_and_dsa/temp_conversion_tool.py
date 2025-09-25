@@ -10,7 +10,7 @@ def convert_to_celsius(fahrenheit):
     This function takes temperature in fahrenheit and returns the temperature
     converted to celcius
     """
-    res = fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR - 32
+    res = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     print(f"{fahrenheit} is {res}25\u00B0 C")
 
 def convert_to_fahrenheit(celsius):
