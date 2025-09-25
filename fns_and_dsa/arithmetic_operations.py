@@ -2,7 +2,7 @@
 This module defines a function that performs basic arithmetic operations.
 """
 
-def perform_operation(num1, num2, operation):
+def perform_operation(num1: float, num2:float, operation: str) -> float | str:
     """
     This function takes in three params:
         - num1 -> first number
@@ -10,17 +10,16 @@ def perform_operation(num1, num2, operation):
         - operation -> the arithmetic operation to perform
     The function performs the maths operation based on the input and returns the result
     """
-    match operation:
-        case 'add':
-            return num1 + num2
-        case 'subtract':
-            return num1 - num2
-        case 'multiply':
-            return num1 * num2
-        case 'divide':
-            if num2 != 0:
-                return num1 / num2
-            else:
-                return 'ZeroDivisionError: division by zero'
-        case _:
-            return 'You entered the wrong operation'
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return 'ZeroDivisionError: division by zero'
+    else:
+        return 'You entered the wrong operation'
