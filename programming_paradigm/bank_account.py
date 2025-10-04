@@ -3,7 +3,6 @@ This module defines a Bankaccount class that implements methods to deposit,
 withdraw, and display the current balance associated with a class instance
 by persisting the changes in a text file
 """
-
 import os
 
 class BankAccount:
@@ -20,20 +19,20 @@ class BankAccount:
         if os.path.exists(BankAccount._BALANCE_FILE):
             with open(BankAccount._BALANCE_FILE, "r") as f:
                 content = f.read().strip()
-                self.account_balance = float(content) if content else 0
+                self.account_balance = round(float(content), 2) if content else 0.00
         else:
-            self.account_balance = account_balance
+            self.account_balance = round(float(account_balance), 2)
             with open(BankAccount._BALANCE_FILE, "w") as f:
-                f.write(str(self.account_balance))
+                f.write(f"{self.account_balance:.2f}")
 
     def deposit(self, amount: int) -> None:
         """
         This method increases the account_balance associated with the
         class instance by the parameter passed to it
         """
-        self.account_balance += amount
+        self.account_balance = round(self.account_balance + amount, 2)
         with open(BankAccount._BALANCE_FILE, "w") as f:
-            f.write(str(self.account_balance))
+            f.write(f"{self.account_balance:.2f}")
 
     def withdraw(self, amount: int) -> bool:
         """
@@ -41,9 +40,9 @@ class BankAccount:
         to the class method
         """
         if self.account_balance - amount >= 0:
-            self.account_balance -= amount
+            self.account_balance = round(self.account_balance - amount, 2)
             with open(BankAccount._BALANCE_FILE, "w") as f:
-                f.write(str(self.account_balance))
+                f.write(f"{self.account_balance:.2f}")
             return True
         return False
 
@@ -52,4 +51,4 @@ class BankAccount:
         This method displays the value in the persisted text file after all
         the operations have been performed
         """
-        print(f"Current Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance:.2f}")
