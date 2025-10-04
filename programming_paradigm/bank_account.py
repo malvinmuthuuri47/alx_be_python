@@ -20,7 +20,7 @@ class BankAccount:
         if os.path.exists(BankAccount._BALANCE_FILE):
             with open(BankAccount._BALANCE_FILE, "r") as f:
                 content = f.read().strip()
-                self.account_balance = int(float(content)) if content else 0
+                self.account_balance = float(content) if content else 0
         else:
             self.account_balance = account_balance
             with open(BankAccount._BALANCE_FILE, "w") as f:
