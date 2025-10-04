@@ -52,4 +52,4 @@ class BankAccount:
         This method displays the value in the persisted text file after all
         the operations have been performed
         """
-        print(f"Current balance: ${int(self.account_balance)}")
+        print(f"Current Balance: ${int(self.account_balance)}")
