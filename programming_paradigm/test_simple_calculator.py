@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertRaises(TypeError, self.calc.subtract, 1, "er")
         self.assertRaises(TypeError, self.calc.subtract, 1, None)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test the multiply function"""
         self.assertEqual(self.calc.multiply(5, 0), 0)
         self.assertEqual(self.calc.multiply(5, 1), 5)
@@ -42,7 +42,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertRaises(TypeError, self.calc.multiply, 2, )
         self.assertRaises(TypeError, self.calc.multiply, None, 2)
 
-    def test_divide(self):
+    def test_division(self):
         """Test the divide function"""
         self.assertEqual(self.calc.divide(2, 4), 0.5)
         self.assertEqual(self.calc.divide(2, 0), None)
