@@ -12,6 +12,9 @@ class Book:
         self.author = author
         self._is_checked_out = False
 
+    def return_book(self):
+        return f"The book '{self.title}' by '{self.author}' has been created")
+
 class Library:
     """
     This class simulates how a library works and implements methods to add a book,
@@ -20,14 +23,14 @@ class Library:
     def __init__(self):
         self._books = []
 
-    def add_book(self, book) -> str:
+    def add_book(self, book) -> None:
         """
         This method adds a book to the library and marks the book
         as available for checkout
         """
         self._books.append(book)
 
-    def check_out_book(self, title: str) -> str:
+    def check_out_book(self, title: str) -> None:
         """
         This method changes the state of the book is_checked_out to false
         indicating that the book isn't available for borrowing
@@ -39,7 +42,7 @@ class Library:
                 book._is_checked_out = True
                 return
 
-    def return_book(self, title: str) -> str:
+    def return_book(self, title: str) -> None:
         """
         This method changes the state of the book's is_checked_out to true
         indicating the book has been returned and is avaialbe for borrowing
@@ -51,7 +54,7 @@ class Library:
                 book._is_checked_out = False
                 return
 
-    def list_available_books(self):
+    def list_available_books(self) -> None:
         available = [book for book in self._books if not book._is_checked_out]
         if not available:
             print("No books available right now.")
