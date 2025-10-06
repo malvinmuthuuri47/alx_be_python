@@ -22,3 +22,6 @@
 
 > [!IMPORTANT]
 > 1. Task One implements a Bank account class with deposit, withdraw, and display_balance methods. It implements this using OOP concepts such as encapsulation for banking operations.
+> 2. Task Two implements a Division calculator with command line arguments and handles mathematical errors such as division by zero and non-numeric inputs.
+> 3. Task Three writes unit tests for a calculator class provided. It tests the addition, subtraction, multiplication, and division methods using the unittest module.
+> 4. Task Four implements a Library management system using OOP concepts. It defines two classes for books and a library and implements methods that define the typical behavior in libraries such as borrowing books and returning books if they are available
