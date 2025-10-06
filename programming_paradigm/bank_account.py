@@ -16,6 +16,7 @@ class BankAccount:
         instantiated and persists the changes in a text file specified
         as a class variable
         """
+        '''
         if os.path.exists(BankAccount._BALANCE_FILE):
             with open(BankAccount._BALANCE_FILE, "r") as f:
                 content = f.read().strip()
@@ -24,6 +25,10 @@ class BankAccount:
             self.account_balance = round(float(account_balance), 2)
             with open(BankAccount._BALANCE_FILE, "w") as f:
                 f.write(f"{self.account_balance:.2f}")
+        '''
+        self.account_balance = round(float(account_balance), 2)
+        with open(BankAccount._BALANCE_FILE, "w") as f:
+           	f.write(f"{self.account_balance:.2f}")
 
     def deposit(self, amount: int) -> None:
         """
