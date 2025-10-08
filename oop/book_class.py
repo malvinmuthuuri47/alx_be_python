@@ -8,13 +8,13 @@ class Book:
         self.author = author
         self.year = year
 
-    def __str__(self) -> str:
+    def __str__(self):
         """
         A function that returns a string representation of the instance
         """
         return f"{self.title} by {self.author}, published in {self.year}"
 
-    def __repr__(self) -> str:
+    def __repr__(self):
         """
         A function that returns an official representation of the instance
         """
