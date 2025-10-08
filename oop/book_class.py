@@ -20,7 +20,7 @@ class Book:
         """
         return f"Book('{self.title}', '{self.author}', {self.year})"
 
-    def __del__(self) -> None:
+    def __del__(self):
         """
         A function that's called when the object is deleted or no longer
         referenced by the program
