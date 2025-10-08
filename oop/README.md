@@ -18,11 +18,7 @@ By the end of this project, you should be able to:
 
 > [!NOTE]
 > ## Project Tasks
-> Task One
-> - This task dives into Python Magic methods and expects you to understand how to use constructors, destructors, string representations **(__str__)**, and official representations **(__repr__)**
-> Task Two
-> - This task dives into mastering inheritance and composition in Python.
-> Task Three
-> - This task dives into exploring Polymorphism and Method overloading in Python.
-> Task Four
-> - This task helps distinguish between class methods and static methods
+> 1. Task One - This task dives into Python Magic methods and expects you to understand how to use constructors, destructors, string representations **(__str__)**, and official representations **(__repr__)**
+> 2. Task Two - This task dives into mastering inheritance and composition in Python.
+> 3. Task Three - This task dives into exploring Polymorphism and Method overloading in Python.
+> 4. Task Four - This task helps distinguish between class methods and static methods
